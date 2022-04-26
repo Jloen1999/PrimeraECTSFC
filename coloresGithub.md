@@ -18,7 +18,7 @@
 @@ text in purple (and bold)@@
 ```
 
-```marmid
+```mermaid
 graph TD:
  A-->B
  A-->C
