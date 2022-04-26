@@ -27,6 +27,7 @@ graph TD;
  A-->C
  C-->D
  B-->D
+ ```
 
 # Trofeos
 [![Ryo-ma's github trophy](https://github-profile-trophy.vercel.app/?username=jloen1999&row=1)](https://github.com/ryo-ma/github-profile-trophy)
