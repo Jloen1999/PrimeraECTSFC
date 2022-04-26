@@ -40,7 +40,8 @@ graph TD;
 <br>
 %20(ESC)
 %2F(/)
-%25(%) <br>
+%25(%) 
+<br>
 - Python package downloads: ![downloads](https://img.shields.io/badge/downloads-13k%2Fmonth-brightgreen)
 - Chrome Web Store extension rating: ![rating](https://img.shields.io/badge/rating-★★★★☆-brightgreen)
 - [Uptime Robot](https://uptimerobot.com) percentage: ![uptime](https://img.shields.io/badge/uptime-100%25-brightgreen)
