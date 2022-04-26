@@ -17,3 +17,10 @@
 # text in gray
 @@ text in purple (and bold)@@
 ```
+
+```marmid
+graph TD:
+ A-->B
+ A-->C
+ C-->D
+ B-->D
