@@ -1,1 +1,2 @@
-
+# **PRIMERA ECTS DE FUNDAMENTOS DE COMPUTADORES**
+"this is blue".blue();
