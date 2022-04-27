@@ -1,5 +1,3 @@
-
-
 # PRIMER ECTS DE FUNDAMENTOS DE COMPUTADORES 💻
 
 [![BashLinux](https://img.shields.io/badge/gnu%20bash-%234EAA25.svg?&style=for-the-badge&logo=gnu%20bash&logoColor=white)](#ComparativaBash)
@@ -26,23 +24,29 @@
 3. <a href="#Significado">___¿Qué es PowerShell?___</a>
 4. <a href="#Consola">___Abrir la consola de PowerShell___</a>
 
-<p id="Introducción"><strong style="color: red">Introducción</strong>
+<p id="Introducción"><strong style="font-size: 18px">Introducción</strong>
 
->La interfaz de usuario es el medio que utilizamos para comunicarnos con el ordenador.
+> La interfaz de usuario es el medio que utilizamos para comunicarnos con el ordenador.
 
->Interfaz gráfica: GUI(Proporciona un entorno visual)
+> Interfaz gráfica: GUI(Proporciona un entorno visual)
 
->Interfaz de línea de comandos:CLI(Command Line Interface, nos permite dar instrucciones por medio de una línea de texto)
+> Interfaz de línea de comandos:CLI(Command Line Interface, nos permite dar instrucciones por medio de una línea de texto)
 
 **¿Cuál de las dos debemos utilizar?**
->La respuesta es fácil, depende de lo que queramos hacer, si quieres navegar, trabajar con un procesador de texto, hoja de cálculo, retocar fotografía, etc, tu respuesta es la interfaz gráfica.
-Y si lo que quieres es automatizar tareas, crear usuarios de forma masiva, comprobar conectividad con servidores pues la respuesta es PowerShell(La linea de comandos)
-CMD o símbolo del sistema frente a la Windows PowerShell.
+
+> La respuesta es fácil, depende de lo que queramos hacer, si quieres navegar, trabajar con un procesador de texto, hoja de cálculo, retocar fotografía, etc, tu respuesta es la interfaz gráfica.
+> Y si lo que quieres es automatizar tareas, crear usuarios de forma masiva, comprobar conectividad con servidores pues la respuesta es PowerShell(La linea de comandos)
 
 </p>   
-<p id="Comandos"><strong>La línea de comandos</strong>
+<p id="Comandos"><strong style="font-size: 18px">La línea de comandos</strong>
 
 Vamos a ver ahora cómo ha evolucionado la línea de comandos de Windows
+
+*CMD o símbolo del sistema*
+Todavía convive con nosotros pero cada vez se utiliza menos, tal vez para hacer un ping o ipconfig
+![img.png](img.png)
+*PowerShell*
+
 Automatizar tareas.
 Orientada a Objetos.
 Lenguaje de Script.
@@ -50,9 +54,8 @@ Windows PowerShell ISE
 
 Entorno para ejecutar, escribir, probar y depurar scripts.
 
-
 </p>
-<p id="Significado"><strong>¿Qué es PowerShell?</strong></p>
+<p id="Significado"><strong style="font-size: 18px">¿Qué es PowerShell?</strong></p>
 <p id="Consola"><strong>Abrir la consola de PowerShell</strong></p>
 
 <p id="PowerShell">La PowerShell es una herramienta multiplataforma utilizada principalmente por los administradores de Sistemas Windows para automatizar tareas y tener un mayor control del sistema.
@@ -68,6 +71,7 @@ Es suficiente con tener un Windows 10 instalado o bien un Windows Server
 ¿Qué contenidos vamos a ver?
 
 **Vamos a ver:**
+
 </p>
 <ul>
 <li><a href="#Comandos">La línea de comandos de Windows</a></li>
@@ -79,21 +83,27 @@ Es suficiente con tener un Windows 10 instalado o bien un Windows Server
 <li><a href="F2">Fundamentos de scripts-II: Estructuras de control y funciones</a></li>
 </ul>
 
->Este curso está planteado en lo más práctico posible. Las Prácticas que vamos a realizar son las siguientes:
-> 
-> >___En el primer momento empezaremos a trabajar con la PowerShell y la PowerShell ISE(que es el entorn)___
-> 
-> >___Vamos a buscar Información___
-> 
-> >___Vamos a utilizar los comandos básicos relacionados con la gestión de archivos y carpetas___
+> Este curso está planteado en lo más práctico posible. Las Prácticas que vamos a realizar son las siguientes:
+>
+>> ___En el primer momento empezaremos a trabajar con la PowerShell y la PowerShell ISE(que es el entorn)___
+>>
+>
+>> ___Vamos a buscar Información___
+>>
+>
+>> ___Vamos a utilizar los comandos básicos relacionados con la gestión de archivos y carpetas___
+>>
 >
 >> ___Vamos a enlazar la salida de un comando con la entrada de otro y redireccionar la salida___
-> 
->>___Y Vamos a realizar pequeños scripts y hablando de Scrips, vamos a hacer un script en el que combinaremos esctructuras condicionales, repetitivas y redireccionamiento.___
+>>
+>
+>> ___Y Vamos a realizar pequeños scripts y hablando de Scrips, vamos a hacer un script en el que combinaremos esctructuras condicionales, repetitivas y redireccionamiento.___
+>>
 
 ***¿Qué vamos a conseguir al finalizar este curso?***
 
 Pues vamos a:
+
 <table>
 <tr>
 <th><strong>A manejar tanto la PowerShell como la PowerShell ISE con soltura.</strong></th>
@@ -113,5 +123,5 @@ graph TD;
     Bash-->Git
     Git-->Github
 ```
-<p id="Github">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque esse harum modi omnis veritatis. Accusantium, architecto, aspernatur assumenda blanditiis commodi cum cumque cupiditate dignissimos dolore enim facere fugit harum incidunt maiores maxime minima modi natus nostrum nulla numquam, quasi ratione repellat sint totam velit voluptas voluptate voluptates! Ab asperiores at cupiditate dicta dolore dolorem dolores dolorum ea, eaque earum, error est hic, illum ipsa magni maxime minus nesciunt nostrum odit officia quae quam quas quidem quis quo reprehenderit tempora tempore. Animi corporis ea eligendi hic mollitia, nulla!</p>
 
+<p id="Github">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque esse harum modi omnis veritatis. Accusantium, architecto, aspernatur assumenda blanditiis commodi cum cumque cupiditate dignissimos dolore enim facere fugit harum incidunt maiores maxime minima modi natus nostrum nulla numquam, quasi ratione repellat sint totam velit voluptas voluptate voluptates! Ab asperiores at cupiditate dicta dolore dolorem dolores dolorum ea, eaque earum, error est hic, illum ipsa magni maxime minus nesciunt nostrum odit officia quae quam quas quidem quis quo reprehenderit tempora tempore. Animi corporis ea eligendi hic mollitia, nulla!</p>
