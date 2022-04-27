@@ -14,19 +14,47 @@
 <h2>PowerShell VS Bash Linux y la importancia de Github y Git</h2>
 
 <ol>
-<li><a href="#PowerShell">PowerShell</a></li>
-<li><a href="#ComparativaBash">Comandos PowerShell vs Bash Linux</a></li>
-<li><a href="#Github">Git en Github</a></li>
+<li><a href="#PowerShell"><strong>PowerShell</strong></a></li>
+<li><a href="#ComparativaBash"><strong>Comandos PowerShell vs Bash Linux</strong></a></li>
+<li><a href="#Github"><strong>Git en Github</strong></a></li>
 </ol>
 
-<h3>PowerShell</h3>
+<h3><u>PowerShell</u></h3>
 
-```diff
-- Introducción
-+ La línea de comandos
-! ¿Qué es PowerShell?
-# Abrir la consola de PowerShell
-```
+1. <a href="#Introducción">___Introducción___</a>
+2. <a href="#Comandos">___La línea de comandos___</a>
+3. <a href="#Significado">___¿Qué es PowerShell?___</a>
+4. <a href="#Consola">___Abrir la consola de PowerShell___</a>
+
+<p id="Introducción"><strong style="color: red">Introducción</strong>
+
+>La interfaz de usuario es el medio que utilizamos para comunicarnos con el ordenador.
+
+>Interfaz gráfica: GUI(Proporciona un entorno visual)
+
+>Interfaz de línea de comandos:CLI(Command Line Interface, nos permite dar instrucciones por medio de una línea de texto)
+
+**¿Cuál de las dos debemos utilizar?**
+>La respuesta es fácil, depende de lo que queramos hacer, si quieres navegar, trabajar con un procesador de texto, hoja de cálculo, retocar fotografía, etc, tu respuesta es la interfaz gráfica.
+Y si lo que quieres es automatizar tareas, crear usuarios de forma masiva, comprobar conectividad con servidores pues la respuesta es PowerShell(La linea de comandos)
+CMD o símbolo del sistema frente a la Windows PowerShell.
+
+</p>   
+<p id="Comandos"><strong>La línea de comandos</strong>
+
+Vamos a ver ahora cómo ha evolucionado la línea de comandos de Windows
+Automatizar tareas.
+Orientada a Objetos.
+Lenguaje de Script.
+Windows PowerShell ISE
+
+Entorno para ejecutar, escribir, probar y depurar scripts.
+
+
+</p>
+<p id="Significado"><strong>¿Qué es PowerShell?</strong></p>
+<p id="Consola"><strong>Abrir la consola de PowerShell</strong></p>
+
 <p id="PowerShell">La PowerShell es una herramienta multiplataforma utilizada principalmente por los administradores de Sistemas Windows para automatizar tareas y tener un mayor control del sistema.
 Esta herramienta está formada por una shell de comandos, un lenguaje de scripting y un marco de administración de configuración.
 
