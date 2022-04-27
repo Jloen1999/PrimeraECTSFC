@@ -20,6 +20,7 @@
 </ol>
 
 <h3>PowerShell</h3>
+
 ```diff
 1. - Introducción
 2. + La línea de comandos
