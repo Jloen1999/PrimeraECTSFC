@@ -17,14 +17,42 @@
 <li><a href="#Github"><strong>Git en Github</strong></a></li>
 </ol>
 
-<h3><u>PowerShell</u></h3>
+```mermaid
+flowchart LR
+A[PowerShell]-->|Comparativa| B(Bash Scripting)
+B --> C{Git}
+C -->D[Github]
+```
+
+<h3 style="color:magenta"><u>PowerShell</u></h3>
 
 1. <a href="#Introducción">___Introducción___</a>
 2. <a href="#Comandos">___La línea de comandos___</a>
 3. <a href="#Significado">___¿Qué es PowerShell?___</a>
 4. <a href="#Consola">___Abrir la consola de PowerShell___</a>
+5. <a href="#Ayuda">___La ayuda en PowerShell___</a>
+6. <a href="#Archivos">___Gestión de archivos y carpetas___</a>
+7. <a href="#Tuberias">___Tuberías y redireccionamiento___</a>
+8. <a href="#Scripts">___Iniciación a los scripts___</a>
+9. <a href="#F1">___Fundamentos de scripts-I: Variables___</a>
+10. <a href="F2">___Fundamentos de scripts-II: Estructuras de control y funciones___</a>
 
-<p id="Introducción"><strong style="font-size: 18px">Introducción</strong>
+
+```mermaid
+flowchart LR
+A[Introduccion]-->B(linea de comandos)
+B --> C{Que es PowerShell?}
+C -->D[la consola de PowerShell]
+D -->E[La ayuda en PowerShell]
+E -->F[Gestion de archivos y carpetas]
+F -->G[Tuberias y redireccionamiento]
+G -->H[Iniciacion a los scripts]
+H -->I[Fundamentos de scripts-I: Variables]
+I -->J[Fundamentos de scripts-II: Estructuras de control y funciones]
+```
+
+
+<p style="color:green" id="Introducción"><strong style="font-size: 18px">Introducción</strong>
 
 > La interfaz de usuario es el medio que utilizamos para comunicarnos con el ordenador.
 
@@ -38,7 +66,7 @@
 > Y si lo que quieres es automatizar tareas, crear usuarios de forma masiva, comprobar conectividad con servidores pues la respuesta es PowerShell(La linea de comandos)
 
 </p>   
-<p id="Comandos"><strong style="font-size: 18px">La línea de comandos</strong>
+<p style="color:green" id="Comandos"><strong style="font-size: 18px">La línea de comandos</strong>
 
 Vamos a ver ahora cómo ha evolucionado la línea de comandos de Windows
 
@@ -60,13 +88,13 @@ ___PowerShell___
 En cambio la PowerShell se pensó como una herramienta de reemplazo del CMD y con el tiempo se ha convertido en una herramienta poderosa de gestión tanto para usuarios domésticos como administradores
 
 </p>
-<p id="Significado"><strong style="font-size: 18px">¿Qué es PowerShell?</strong>
+<p style="color:green" id="Significado"><strong style="font-size: 18px">¿Qué es PowerShell?</strong>
 
 
 
 </p>
 
-<p id="PowerShell">La PowerShell es una nueva línea de comandos, es una herramienta multiplataforma utilizada principalmente por los administradores de Sistemas Windows para automatizar tareas y tener un mayor control del sistema.
+<p id="PowerShell">La PowerShell es una nueva línea de comandos, es decir, es una herramienta multiplataforma utilizada principalmente por los administradores de Sistemas Windows para automatizar tareas y tener un mayor control del sistema.
 Esta herramienta está formada por una shell de comandos, un lenguaje de scripting y un marco de administración de configuración.
 Trabaja con objetos, acepta y devuelve objetos en vez de texto como ocurre con el CMD 
 
@@ -100,21 +128,23 @@ Trabaja con objetos, acepta y devuelve objetos en vez de texto como ocurre con e
             <th>2013</th>
         </tr>
         <tr>
-            <th>V4</th>
+            <th>V5</th>
             <th>2016</th>
         </tr>
         <tr>
-            <th>V5</th>
+            <th>V5.1</th>
             <th>2017</th>
         </tr>
         <tr>
-            <th>V5.1</th>
+            <th>V Core 6.0</th>
             <th>2018</th>
         </tr>
     </tbody>
 </table>
 
-
+No tenemos que confundir:
+* Windows PowerShell ISE, es un entorno en el que podemos ejecutar comandos, escribir, probar y depurar script.
+* Windows PowerShell es la consola de comandos.
 
 ***¿Qué requisitos se necesitan para aprender dicha herramienta?***
 Como se trata de un curso a nivel de iniciación en PowerShell, cualquier persona con conocimientos de informática a nivel de usuario podría hacerlo sin mayor problema, ahora bien hay una parte en la que se habla de variables y estructuras condicionales y entonces aquí si se requiere conocimientos mínimos de programación
@@ -125,18 +155,15 @@ Es suficiente con tener un Windows 10 instalado o bien un Windows Server
 
 **Vamos a ver:**
 
-</>
-<p id="Consola"><strong>Abrir la consola de PowerShell</strong></p>
+<p style="color:green" id="Consola"><strong>Abrir la consola de PowerShell</strong></p>
+Hay varias maneras de abrir la consola de comandos en Windows:
 
-<ul>
-<li><a href="#Comandos">La línea de comandos de Windows</a></li>
-<li><a href="#Ayuda">La ayuda en PowerShell</a></li>
-<li><a href="#Archivos">Gestión de archivos y carpetas</a></li>
-<li><a href="#Tuberias">Tuberías y redireccionamiento</a></li>
-<li><a href="#Scripts">Iniciación a los scripts</a></li>
-<li><a href="#F1">Fundamentos de scripts-I: Variables</a></li>
-<li><a href="F2">Fundamentos de scripts-II: Estructuras de control y funciones</a></li>
-</ul>
+* Dando click derecho sobre el símbolo de Windows y pinchamos donde aparece PowerShell
+* Pulsando Windows+R y escribimos `PowerShell`
+
+Podemos ver la versión que tiene nuestro PowerShell con el comando `get-host`
+![img_2.png](img_2.png)
+
 
 > Este curso está planteado en lo más práctico posible. Las Prácticas que vamos a realizar son las siguientes:
 >
@@ -168,15 +195,21 @@ Pues vamos a:
 </tr>
 </table>
 
-<h3>PowerShell vs Bash Linux</h3>
+<h3 style="color:magenta">PowerShell vs Bash Linux</h3>
 <p id="ComparativaBash">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolores incidunt placeat tempore. Aliquid aspernatur commodi dicta earum facilis minima nam, neque obcaecati provident quisquam unde vero! Atque aut distinctio ducimus exercitationem fuga illo odio praesentium quaerat quasi tempore. Ab, beatae blanditiis, consectetur consequatur dignissimos eaque error eum fugiat harum nulla quam quisquam quod, sunt vitae?</p>
-<h3>Git en Github</h3>
+<h3 style="color:magenta">Git en Github</h3>
 
 ```mermaid
-graph TD;
-    PowerSHell-->Git
-    Bash-->Git
-    Git-->Github
+flowchart LR;
+B["fa:fa-twitter PC"]
+    B-->C[fa:fa-ban PowerShell]
+    B-->D(fa:fa-spinner Bash Script);
+    B-->E(fa:fa-camera-retro Otro lenguaje)
+    C-->F(fa:fa-camera-retro Fichero)
+    D-->F(fa:fa-camera-retro Fichero)
+    E-->F(fa:fa-camera-retro Fichero)
+    F-->G(fa:fa-spinner Git)
+    G-->H(fa:fa-spinner Github)
 ```
 
 <p id="Github">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque esse harum modi omnis veritatis. Accusantium, architecto, aspernatur assumenda blanditiis commodi cum cumque cupiditate dignissimos dolore enim facere fugit harum incidunt maiores maxime minima modi natus nostrum nulla numquam, quasi ratione repellat sint totam velit voluptas voluptate voluptates! Ab asperiores at cupiditate dicta dolore dolorem dolores dolorum ea, eaque earum, error est hic, illum ipsa magni maxime minus nesciunt nostrum odit officia quae quam quas quidem quis quo reprehenderit tempora tempore. Animi corporis ea eligendi hic mollitia, nulla!</p>
