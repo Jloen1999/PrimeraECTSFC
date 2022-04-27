@@ -12,6 +12,7 @@
 ![Fecha](https://img.shields.io/badge/Fecha-27%2F04%2F2022-orange)
 
 <h2>PowerShell VS Bash Linux y la importancia de Github y Git</h2>
+
 <ol>
 <li><a href="#PowerShell">PowerShell</a></li>
 <li><a href="#ComparativaBash">Comandos PowerShell vs Bash Linux</a></li>
@@ -19,9 +20,12 @@
 </ol>
 
 <h3>PowerShell</h3>
-
-1. Introducción 2. La línea de comandos 3. ¿Qué es PowerShell? 4. Abrir la consola de PowerShell
-
+```diff
+1. - Introducción
+2. + La línea de comandos
+3. ! ¿Qué es PowerShell?
+4. # Abrir la consola de PowerShell
+```
 <p id="PowerShell">La PowerShell es una herramienta multiplataforma utilizada principalmente por los administradores de Sistemas Windows para automatizar tareas y tener un mayor control del sistema.
 Esta herramienta está formada por una shell de comandos, un lenguaje de scripting y un marco de administración de configuración.
 
