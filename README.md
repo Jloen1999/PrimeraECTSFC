@@ -44,6 +44,9 @@ Vamos a ver ahora cómo ha evolucionado la línea de comandos de Windows
 
 *CMD o símbolo del sistema*
 Todavía convive con nosotros pero cada vez se utiliza menos, tal vez para hacer un ping o ipconfig
+```cmd
+ping 8.8.8.8 (Para comprobar si nuestra PC tiene conexión a Internet)
+```
 ![img.png](img.png)
 *PowerShell*
 
