@@ -42,29 +42,79 @@
 
 Vamos a ver ahora cómo ha evolucionado la línea de comandos de Windows
 
-*CMD o símbolo del sistema*
+___CMD o símbolo del sistema:___
+
 Todavía convive con nosotros pero cada vez se utiliza menos, tal vez para hacer un ping o ipconfig
 ```cmd
 ping 8.8.8.8 (Para comprobar si nuestra PC tiene conexión a Internet)
 ```
 ![img.png](img.png)
-*PowerShell*
 
-Automatizar tareas.
-Orientada a Objetos.
-Lenguaje de Script.
-Windows PowerShell ISE
+```cmd
+ipconfig (Para ver los adaptadores de red de la PC)
+```
+![img_1.png](img_1.png)
 
-Entorno para ejecutar, escribir, probar y depurar scripts.
+___PowerShell___
+
+En cambio la PowerShell se pensó como una herramienta de reemplazo del CMD y con el tiempo se ha convertido en una herramienta poderosa de gestión tanto para usuarios domésticos como administradores
 
 </p>
-<p id="Significado"><strong style="font-size: 18px">¿Qué es PowerShell?</strong></p>
-<p id="Consola"><strong>Abrir la consola de PowerShell</strong></p>
+<p id="Significado"><strong style="font-size: 18px">¿Qué es PowerShell?</strong>
 
-<p id="PowerShell">La PowerShell es una herramienta multiplataforma utilizada principalmente por los administradores de Sistemas Windows para automatizar tareas y tener un mayor control del sistema.
+
+
+</p>
+
+<p id="PowerShell">La PowerShell es una nueva línea de comandos, es una herramienta multiplataforma utilizada principalmente por los administradores de Sistemas Windows para automatizar tareas y tener un mayor control del sistema.
 Esta herramienta está formada por una shell de comandos, un lenguaje de scripting y un marco de administración de configuración.
+Trabaja con objetos, acepta y devuelve objetos en vez de texto como ocurre con el CMD 
 
 ***¿Dónde podemos encontrar PowerShell?*** En Windows 10 la encontramos, Windows Server, Microsoft Azure, SQL Server, Sercivios de Office 365, se encuentra prácticamente en todos los productos de Microsoft
+
+<table>
+    <thead>
+        <tr>
+           <th colspan="2">Versiones</th>   
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Versión</th>
+            <th>año</th>
+        </tr>
+        <tr>
+            <th>V1</th>
+            <th>2006</th>
+        </tr>
+        <tr>
+            <th>V2</th>
+            <th>2009</th>
+        </tr>
+        <tr>
+            <th>V3</th>
+            <th>2012</th>
+        </tr>
+        <tr>
+            <th>V4</th>
+            <th>2013</th>
+        </tr>
+        <tr>
+            <th>V4</th>
+            <th>2016</th>
+        </tr>
+        <tr>
+            <th>V5</th>
+            <th>2017</th>
+        </tr>
+        <tr>
+            <th>V5.1</th>
+            <th>2018</th>
+        </tr>
+    </tbody>
+</table>
+
+
 
 ***¿Qué requisitos se necesitan para aprender dicha herramienta?***
 Como se trata de un curso a nivel de iniciación en PowerShell, cualquier persona con conocimientos de informática a nivel de usuario podría hacerlo sin mayor problema, ahora bien hay una parte en la que se habla de variables y estructuras condicionales y entonces aquí si se requiere conocimientos mínimos de programación
@@ -75,7 +125,9 @@ Es suficiente con tener un Windows 10 instalado o bien un Windows Server
 
 **Vamos a ver:**
 
-</p>
+</>
+<p id="Consola"><strong>Abrir la consola de PowerShell</strong></p>
+
 <ul>
 <li><a href="#Comandos">La línea de comandos de Windows</a></li>
 <li><a href="#Ayuda">La ayuda en PowerShell</a></li>
