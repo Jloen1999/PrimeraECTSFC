@@ -22,10 +22,10 @@
 <h3>PowerShell</h3>
 
 ```diff
-1. - Introducción
-2. + La línea de comandos
-3. ! ¿Qué es PowerShell?
-4. # Abrir la consola de PowerShell
+- Introducción
++ La línea de comandos
+! ¿Qué es PowerShell?
+# Abrir la consola de PowerShell
 ```
 <p id="PowerShell">La PowerShell es una herramienta multiplataforma utilizada principalmente por los administradores de Sistemas Windows para automatizar tareas y tener un mayor control del sistema.
 Esta herramienta está formada por una shell de comandos, un lenguaje de scripting y un marco de administración de configuración.
