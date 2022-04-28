@@ -1,6 +1,6 @@
 # PRIMERA ECTS DE FC💻
 
-<h2>PowerShell y el uso de Git en Github</h2>
+<h2>PowerShell y el uso de Git en Github</h2><br>
 
 [![PowerShell](https://img.shields.io/badge/powershell-%235391FE.svg?&style=for-the-badge&logo=powershell&logoColor=white)](#PowerShell)
 [![GitHub](https://img.shields.io/badge/github-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white)](#Github)
@@ -8,7 +8,7 @@
 
 ![Nombre:](https://img.shields.io/badge/Nombre:-Jose%20Luis%20Obiang%20Ela%20Nanguan-orange) <br>
 ![Profesor](https://img.shields.io/badge/Profesor:-Francisco%20Fernandez%20de%20Vega-orange) <br>
-![Fecha](https://img.shields.io/badge/Fecha-27%2F04%2F2022-orange)
+![Fecha](https://img.shields.io/badge/Fecha-27%2F04%2F2022-orange)<br>
 
 ***Desarrollado por José Luis Obiang Ela Nanguan***
 
