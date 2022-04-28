@@ -8,7 +8,7 @@
 
 ![Nombre:](https://img.shields.io/badge/Nombre:-Jose%20Luis%20Obiang%20Ela%20Nanguan-orange) <br>
 ![Profesor](https://img.shields.io/badge/Profesor:-Francisco%20Fernandez%20de%20Vega-orange) <br>
-![Fecha](https://img.shields.io/badge/Fecha-27%2F04%2F2022-orange)<br>
+![Fecha](https://img.shields.io/badge/Fecha-27%2F04%2F2022-orange)
 
 ***Desarrollado por José Luis Obiang Ela Nanguan***
 
