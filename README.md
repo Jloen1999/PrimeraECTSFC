@@ -10,7 +10,7 @@
 ![Profesor](https://img.shields.io/badge/Profesor:-Francisco%20Fernandez%20de%20Vega-orange) <br>
 ![Fecha](https://img.shields.io/badge/Fecha-27%2F04%2F2022-orange)
 
-***Desarrollado por José Luis Obiang Ela Nanguan***
+***Copyright :copyright: José Luis Obiang Ela Nanguan***
 
 ***Documentación del proyecto:*** :point_right:[JLOEN1999](https://github.com/Jloen1999/PrimeraECTSFC)
 
@@ -112,7 +112,6 @@ I -->J[Fundamentos de scripts-II: Estructuras de control y funciones]
 <strong style="margin-left: 25px"><a style="color:green; font-size:25px" href="#5">2.2. El paso de CMD a PowerShell</a></strong><br>
 
 <p id="Comandos">
-
 
 Vamos a ver ahora cómo ha evolucionado la línea de comandos de Windows.
 
@@ -216,7 +215,6 @@ Como se trata de un curso en el ámbito de iniciación en PowerShell, cualquier 
 Es suficiente con tener un Windows 10 instalado o bien un Windows Server.
 
 <p id="Consola"><strong style="color:green;font-size: 25px; margin-left: 18px" ></strong><br>
-
 
 <strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#7">2.4. La consola de PowerShell</a></strong><br>
 
@@ -528,9 +526,9 @@ Vamos a crear un archivo y un directorio
 ¿Qué pasaría si el directorio que queremos eliminar tiene archivos dentro? Solo con el comando anterior no podríamos eliminarlo.
 Para ello tenemos que usar el parámetro `Recurse`
 
-Hacemos una prueba, creamos archivos dentro de un directorio que crearemos ahora\
-Pasos: 
-* Creamos la carpeta. `new-item carpeta -itemType Directory` (Alias: md carpeta) 
+Hacemos una prueba, creamos archivos dentro de un directorio que crearemos ahoraPasos:
+
+* Creamos la carpeta. `new-item carpeta -itemType Directory` (Alias: md carpeta)
 * Nos situamos en la carpeta: `set-location carpeta` (Alias: cd carpeta)
 * Creamos el archivo: `new-item archivo -itemType File` (Alias: ni archivo)
 * Nos desplazamos una posición atrás de la carpeta: `set-Location ..`(Alias: cd ..)
@@ -592,3 +590,7 @@ flowchart LR
 A[PowerShell]-->|Control| B{Git}
 B -->C[Github]
 ```
+
+# Los lenguajes utilizados
+
+[![Jloen lenguajes](https://github-readme-stats.vercel.app/api/top-langs/?username=jloen1999&theme=blue-green)](https://github.com/Jloen1999/PrimeraECTSFC)
