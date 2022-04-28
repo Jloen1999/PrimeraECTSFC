@@ -28,14 +28,14 @@
 <strong style="margin-left: 24px">2.3. <a id="6" href="#Significado">¿Qué es PowerShell?</a><br>
 <strong style="margin-left: 24px">2.4. <a id="7" href="#Consola">La consola de PowerShell</a><br>
 <strong style="margin-left: 24px">2.5. <a id="8" href="#Ayuda">La ayuda en PowerShell</a><br>
-<strong style="margin-left: 48px">2.5.1. <a id="#9" href="#module">Obtener Comandos con get-command y get-module</a></strong><br>
-<strong style="margin-left: 48px">2.5.2. <a id="#10" href="#help">Obtener ejemplos del uso de Comandos con get-help</a></strong><br>
-<strong style="margin-left: 48px">2.5.3. <a id="#11" href="#atajoAlias">Atajos y Alias</a></strong><br>
-<strong style="margin-left: 24px">2.5. <a id="12" href="#Archivos">Gestión de archivos y carpetas</a><br>
-<strong style="margin-left: 24px">2.5. <a id="13" href="#Tuberias">Tuberías y redireccionamiento</a><br>
-<strong style="margin-left: 24px">2.5. <a id="14" href="#Scripts">Iniciación a los scripts</a><br>
-<strong style="margin-left: 24px">2.5. <a id="15" href="#F1">Fundamentos de scripts-I: Variables</a><br>
-<strong style="margin-left: 24px">2.5. <a id="16" href="#F2">Fundamentos de scripts-II: Estructuras de control y funciones</a><br>
+<strong style="margin-left: 48px">2.5.1. <a id="9" href="#module">Obtener Comandos con get-command y get-module</a></strong><br>
+<strong style="margin-left: 48px">2.5.2. <a id="10" href="#help">Obtener ejemplos del uso de Comandos con get-help</a></strong><br>
+<strong style="margin-left: 48px">2.5.3. <a id="11" href="#atajoAlias">Atajos y Alias</a></strong><br>
+<strong style="margin-left: 24px">2.6. <a id="12" href="#Archivos">Gestión de archivos y carpetas</a><br>
+<strong style="margin-left: 24px">2.7. <a id="13" href="#Tuberias">Tuberías y redireccionamiento</a><br>
+<strong style="margin-left: 24px">2.8. <a id="14" href="#Scripts">Iniciación a los scripts</a><br>
+<strong style="margin-left: 24px">2.9. <a id="15" href="#F1">Fundamentos de scripts-I: Variables</a><br>
+<strong style="margin-left: 24px">2.10. <a id="16" href="#F2">Fundamentos de scripts-II: Estructuras de control y funciones</a><br>
 **3.** <strong><a id="17" href="#Github">Github</a></strong><br><br>
 
 <strong><a style="color:magenta; font-size:25px; margin:0px" href="#1">1. Presentación</a></strong><br>
@@ -56,7 +56,7 @@ ___Y vamos a realizar pequeños scripts, vamos a hacer scripts en los que combin
 ___También haremos uso de la herramienta Git y la subida de nuestros scripts a Github___
 
 </p>
-<strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#2">1.1. Objetivos</a></strong><br>
+<strong style="margin-left: 25px"><a style="color:green; font-size:25px" href="#2">1.1. Objetivos</a></strong><br>
 
 <p id="Objetivos"></p>
 
@@ -109,7 +109,10 @@ I -->J[Fundamentos de scripts-II: Estructuras de control y funciones]
 > , pero si lo que quieres es automatizar tareas, crear usuarios de forma masiva, comprobar conectividad con servidores pues la respuesta es PowerShell(La linea de comandos).
 
 </p>   
-<p style="color:green" id="Comandos"><strong style="font-size: 18px;margin-left: 30px">2.2. El paso de CMD a PowerShell</strong>
+<strong style="margin-left: 25px"><a style="color:green; font-size:25px" href="#5">2.2. El paso de CMD a PowerShell</a></strong><br>
+
+<p id="Comandos">
+
 
 Vamos a ver ahora cómo ha evolucionado la línea de comandos de Windows.
 
@@ -139,14 +142,15 @@ regedit (Que es una base de datos donde están los ajustes de configuración y o
 
 ![img_12.png](img_12.png)
 
-___PowerShell___
+___PowerShell:___
 
 En cambio, la PowerShell se pensó como una herramienta de reemplazo del CMD y con el tiempo se ha convertido en una herramienta poderosa de gestión tanto para usuarios domésticos como administradores.
 
 </p>
-<p style="color:green" id="Significado"><strong style="font-size: 18px;margin-left: 30px">2.3. ¿Qué es PowerShell?</strong>
 
-</p>
+<strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#6">2.3. ¿Qué es PowerShell?</a></strong><br>
+
+<p id="Significado">
 
 <p id="PowerShell">La PowerShell es una nueva línea de comandos, es decir, es una herramienta multiplataforma utilizada principalmente por los administradores de Sistemas Windows para automatizar tareas y tener un mayor control del sistema.
 Esta herramienta está formada por una shell de comandos, un lenguaje de scripting y un marco de administración de configuración.
@@ -211,7 +215,13 @@ Como se trata de un curso en el ámbito de iniciación en PowerShell, cualquier 
 ***¿Qué máquina necesitamos para trabajar en PowerShell?***
 Es suficiente con tener un Windows 10 instalado o bien un Windows Server.
 
-<p id="Consola"><strong style="color:green;font-size: 18px; margin-left: 18px" >2.4. La consola de PowerShell</strong><br>
+<p id="Consola"><strong style="color:green;font-size: 25px; margin-left: 18px" ></strong><br>
+
+
+<strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#7">2.4. La consola de PowerShell</a></strong><br>
+
+<p id="Consola">
+
 Hay varias maneras de abrir la consola de comandos en Windows:
 
 * Dando clic derecho sobre el símbolo de Windows y pinchamos donde aparece PowerShell.
@@ -300,7 +310,7 @@ Digamos que estos son los comandos que conocemos. Entonces imaginaros que querem
 <strong style="color:green;font-size: 18px; margin-left: 18px"><a style="color: green" href="#8">2.5. La ayuda en PowerShell</a></strong><br>
 
 <p id="Ayuda"></p>
-<strong style="font-size: 18px; margin-left: 35px"><a style="color: yellow" href="#9">2.5.1. Obtener Comandos con get-command y get-module</a></strong><br>
+<strong style="font-size: 18px; margin-left: 20px"><a style="color: yellow" href="#9">2.5.1. Obtener Comandos con get-command y get-module</a></strong><br>
 
 <p id="module">Si yo pongo el comando `get-command` lo que conseguimos es visualizar todos los comandos que tiene la PowerShell.
 
@@ -364,7 +374,7 @@ Y comprobamos que ya no está con el comando `get-module`
 ![img_26.png](img_26.png)
 
 </p>
-<strong style="font-size: 18px; margin-left: 35px"><a style="color: yellow" href="#10">2.5.2. Obtener ejemplos del uso de Comandos con get-help</a></strong><br>
+<strong style="font-size: 18px; margin-left: 20px"><a style="color: yellow" href="#10">2.5.2. Obtener ejemplos del uso de Comandos con get-help</a></strong><br>
 <p id="help">
 ¿Y ahora qué pasa si queremos buscar información e incluso ejemplos del uso de un comando?
 Entonces necesitamos la ayuda de PowerShell.
@@ -535,7 +545,7 @@ Si intentamos hacer un listado del directorio eliminado nos saltará un error.
 
 </p>
 
-<strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#13">2.6. Tuberías y redireccionamiento</a></strong><br>
+<strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#13">2.7. Tuberías y redireccionamiento</a></strong><br>
 
 <p id="Tuberias">
 
