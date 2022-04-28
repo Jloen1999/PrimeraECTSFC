@@ -1,0 +1,4 @@
+Shell: Es un programa informático que tiene una interfaz de usuario para acceder a los servicios del Sistema Operativo
+Script: Es una secuencia de comandos.
+/mnt: es donde están los puntos de montaje de los distintos dispositivos de almacenamiento como por ejemplo discos duros externos, particiones de unidades externas, etc.
+AWK: es una herramienta de procesamiento de patrones en líneas de texto
