@@ -29,23 +29,23 @@
 <ol>
 <li><strong><a id="4" href="#Introducción">Introducción</a></strong></li>
 <li><strong><a id="5" href="#Comandos">El paso de CMD a PowerShell</a></strong></li>
-<strong>2.3. <a id="6" href="#Significado">¿Qué es PowerShell?</a><br>
-<strong>2.4. <a id="7" href="#Consola">La consola de PowerShell</a><br>
-<strong>2.5. <a id="8" href="#Ayuda">La ayuda en PowerShell</a><br>
-<strong style="margin-left: 48px">2.5.1. <a id="9" href="#module">Obtener Comandos con get-command y get-module</a></strong><br>
-<strong style="margin-left: 48px">2.5.2. <a id="10" href="#help">Obtener ejemplos del uso de Comandos con get-help</a></strong><br>
-<strong style="margin-left: 48px">2.5.3. <a id="11" href="#atajoAlias">Atajos y Alias</a></strong><br>
-<strong><a id="12" href="#Archivos">Gestión de archivos y carpetas</a><br>
-<strong><a id="13" href="#Tuberias">Tuberías y redireccionamiento</a><br>
-<strong><a id="14" href="#Scripts">Iniciación a los scripts</a><br>
-<strong><a id="15" href="#F1">Fundamentos de scripts-I: Variables</a><br>
-<strong><a id="16" href="#F2">Fundamentos de scripts-II: Estructuras de control y funciones</a><br>
+<li><strong><a id="6" href="#Significado">¿Qué es PowerShell?</a></strong></li>
+<li><strong><a id="7" href="#Consola">La consola de PowerShell</a></strong></li>
+<li><strong><a id="8" href="#Ayuda">La ayuda en PowerShell</a></strong></li>
+<li><strong><a id="9" href="#module">Obtener Comandos con get-command y get-module</a></strong></li>
+<li><strong><a id="10" href="#help">Obtener ejemplos del uso de Comandos con get-help</a></strong></li>
+<li><strong><a id="11" href="#atajoAlias">Atajos y Alias</a></strong></li>
+<li><strong><a id="12" href="#Archivos">Gestión de archivos y carpetas</a></strong></li>
+<li><strong><a id="13" href="#Tuberias">Tuberías y redireccionamiento</a></strong></li>
+<li><strong><a id="14" href="#Scripts">Iniciación a los scripts</a></strong></li>
+<li><strong><a id="15" href="#F1">Fundamentos de scripts-I: Variables</a></strong></li>
+<li><strong><a id="16" href="#F2">Fundamentos de scripts-II: Estructuras de control y funciones</a></strong></li>
 </ol>
 </li>
-**3.** <strong><a id="17" href="#Github">Github</a></strong><br><br>
+<li><strong><a id="17" href="#Github">Github</a></strong><br><br>
 </ol>
-<strong><a style="color:magenta; font-size:25px; margin:0px" href="#1">1. Presentación</a></strong><br>
 
+<strong><a style="color:magenta; font-size:25px; margin:0px" href="#1">1. Presentación</a></strong><br>
 <p id="Presentación">
 Este curso está planteado en lo más práctico posible. Las Prácticas que vamos a realizar son las siguientes:
 
