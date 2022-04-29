@@ -19,25 +19,31 @@
 ![Version](https://img.shields.io/badge/Version%20Actual-27.04.2022-blue)
 
 <h1><b>Índice de contenido</b></h1>
-
-**1.** <strong><a id="1" href="#Presentación">Presentación</a></strong><br>
-<strong style="margin-left: 24px">1.1. <a id="2" href="#Objetivos">Objetivos</a></strong><br>
-**2.** <strong><a id="3" href="#PowerShell">PowerShell</a></strong><br>
-<strong style="margin-left: 24px">2.1. <a id="4" href="#Introducción">Introducción</a><br>
-<strong style="margin-left: 24px">2.2. <a id="5" href="#Comandos">El paso de CMD a PowerShell</a><br>
-<strong style="margin-left: 24px">2.3. <a id="6" href="#Significado">¿Qué es PowerShell?</a><br>
-<strong style="margin-left: 24px">2.4. <a id="7" href="#Consola">La consola de PowerShell</a><br>
-<strong style="margin-left: 24px">2.5. <a id="8" href="#Ayuda">La ayuda en PowerShell</a><br>
+<ol>
+<li><strong><a id="1" href="#Presentación">Presentación</a></strong>
+<ol>
+<li><strong><a id="2" href="#Objetivos">Objetivos</a></strong></li>
+</ol>
+</li>
+<li><strong><a id="3" href="#PowerShell">PowerShell</a></strong>
+<ol>
+<li><strong><a id="4" href="#Introducción">Introducción</a></strong></li>
+<li><strong><a id="5" href="#Comandos">El paso de CMD a PowerShell</a></strong></li>
+<strong>2.3. <a id="6" href="#Significado">¿Qué es PowerShell?</a><br>
+<strong>2.4. <a id="7" href="#Consola">La consola de PowerShell</a><br>
+<strong>2.5. <a id="8" href="#Ayuda">La ayuda en PowerShell</a><br>
 <strong style="margin-left: 48px">2.5.1. <a id="9" href="#module">Obtener Comandos con get-command y get-module</a></strong><br>
 <strong style="margin-left: 48px">2.5.2. <a id="10" href="#help">Obtener ejemplos del uso de Comandos con get-help</a></strong><br>
 <strong style="margin-left: 48px">2.5.3. <a id="11" href="#atajoAlias">Atajos y Alias</a></strong><br>
-<strong style="margin-left: 24px">2.6. <a id="12" href="#Archivos">Gestión de archivos y carpetas</a><br>
-<strong style="margin-left: 24px">2.7. <a id="13" href="#Tuberias">Tuberías y redireccionamiento</a><br>
-<strong style="margin-left: 24px">2.8. <a id="14" href="#Scripts">Iniciación a los scripts</a><br>
-<strong style="margin-left: 24px">2.9. <a id="15" href="#F1">Fundamentos de scripts-I: Variables</a><br>
-<strong style="margin-left: 24px">2.10. <a id="16" href="#F2">Fundamentos de scripts-II: Estructuras de control y funciones</a><br>
+<strong><a id="12" href="#Archivos">Gestión de archivos y carpetas</a><br>
+<strong><a id="13" href="#Tuberias">Tuberías y redireccionamiento</a><br>
+<strong><a id="14" href="#Scripts">Iniciación a los scripts</a><br>
+<strong><a id="15" href="#F1">Fundamentos de scripts-I: Variables</a><br>
+<strong><a id="16" href="#F2">Fundamentos de scripts-II: Estructuras de control y funciones</a><br>
+</ol>
+</li>
 **3.** <strong><a id="17" href="#Github">Github</a></strong><br><br>
-
+</ol>
 <strong><a style="color:magenta; font-size:25px; margin:0px" href="#1">1. Presentación</a></strong><br>
 
 <p id="Presentación">
@@ -520,11 +526,14 @@ Vamos a crear un archivo y un directorio
 ![img_50.png](img_50.png)
 
 ¿Si quisiéramos eliminarlos?
-
+* ***`remove-item`:***
+* Alias:
+  * rm:arrow_right:Archivos y carpetas
+  
 ![img_51.png](img_51.png)
 
-¿Qué pasaría si el directorio que queremos eliminar tiene archivos dentro? Solo con el comando anterior no podríamos eliminarlo.
-Para ello tenemos que usar el parámetro `Recurse`
+¿Qué pasaría si el directorio que queremos eliminar tiene archivos dentro? Solo con el comando el sistema nos preguntaría si queremos borrar la carpeta
+Para que no nos pregunte usamos el parámetro `Recurse`
 
 Hacemos una prueba, creamos archivos dentro de un directorio que crearemos ahoraPasos:
 
