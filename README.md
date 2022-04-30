@@ -46,6 +46,7 @@
 </ol>
 
 <strong><a style="color:magenta; font-size:25px; margin:0px" href="#1">1. Presentación</a></strong><br>
+
 <p id="Presentación">
 Este curso está planteado en lo más práctico posible. Las Prácticas que vamos a realizar son las siguientes:
 
@@ -526,10 +527,12 @@ Vamos a crear un archivo y un directorio
 ![img_50.png](img_50.png)
 
 ¿Si quisiéramos eliminarlos?
+
 * ***`remove-item`:***
-* Alias:
-  * rm:arrow_right:Archivos y carpetas
-  
+  * Permite eliminar archivos o carpetas
+  * Alias:
+    * rm:arrow_right:Archivos y carpetas
+
 ![img_51.png](img_51.png)
 
 ¿Qué pasaría si el directorio que queremos eliminar tiene archivos dentro? Solo con el comando el sistema nos preguntaría si queremos borrar la carpeta
@@ -550,13 +553,175 @@ Si intentamos hacer un listado del directorio eliminado nos saltará un error.
 
 ![img_53.png](img_53.png)
 
+Vamos a ver ahora otro comando que sirve para mover elementos, objetos de un sitio a otro
+
+* ***`move-item`***
+  * Permite mover elementos u objetos de un sitio a otro
+  * Alias:
+    * mv: Archivos y Directorios
+    * mi: Archivos y Directorios
+      Ejemplo: crearemos unos cuantos archivos, luego crearemos una carpeta y dichos archivos las moveremos a la carpeta creada.
+    * Pasos:
+      * Creamos el|los archivos: `new-item <nombre_archivo>`(sin especificar el tipo de archivo con el parámetro itemType, por defecto estaríamos creando un archivo)
+      * Creamos la carpeta en la cual moveremos dichos archivos: `new-item <nombre_carpeta> -itemType Directory`
+      * Movemos los archivos a la carpeta: `move-item <archivoCreado> <carpetaCreada>`
+      * Podemos comprobar que los archivos han sido movidos correctamente de tres maneras:
+        1. Pasando al comando `get-childItem` la ruta relativa de carpeta
+        2. Pasando al comando `get-childItem` la ruta absoluta de carpeta
+        3. O bien situándonos primero a la ubicación de la carpeta `set-location <carpetaCreada>` y luego ejecutar el comando `get-childItem` sin especificar ninguna ruta
+           ![img_59.png](img_59.png)
+
+¿Y ahora en vez de mover un archivo quisiéramos copiarlo?
+
+* ***copy-item***
+  * Copia un archivo o carpeta
+  * Alias:
+    * cp
+    * copy
+      Por ejemplo:
+  * Pasos:
+    * Creamos una nueva carpeta en la cual moveremos el|los archivos: `new-item <nombre_carpeta> -itemType Directory`
+    * Hacemos la copia:
+      * Copiar una carpeta a otra:  `copy-item <carpeta_Creada> <nuevaCarpeta> -Recurse`(Parámetro `Recurse` es para que también se copie el contenido de la carpeta origen a la carpeta destino)
+        ![img_60.png](img_60.png)
+        <span style="color:red">NOTA: Si intentamos copiar una carpeta a otra que no existe, esa se creará automáticamente con el contenido de la carpeta copiada</span><br>
+        Ejemplo: ![img_64.png](img_64.png)
+      * Copiar un archivo a una carpeta: `copy-item <fichero_Creado> <nuevaCarpeta>`
+        ![img_61.png](img_61.png)
+
+Ahora pasamos al uso del comando rename-item
+
+* ***rename-item***
+  * Permite renombrar archivos y carpetas.
+  * Alias:
+    * ren
+      Por ejemplo:
+    * Renombrar carpetas.
+      ![img_62.png](img_62.png)
+      Como podemos observar la carpeta fotos ya no existe, ya que lo hemos renombrado a recuerdos.
+    * Renombrar archivos. Si quisiéramos renombrar al archivo foto1.jpg que habíamos creado previamente, lo hacemos de la siguiente manera.
+      ![img_63.png](img_63.png)
+
+Digamos que queremos editar el contenido de un archivo.
+Creamos el archivo![img_77.png](img_77.png)
+Podemos hacerlo de varias maneras.
+
+* Con el block de notas Notepad: `notepad <nombre_archivo>`
+* Desde la consola de PowerShell, para ello tendremos que instalar el editor nano o vim.
+  * Instalación:
+
+    * Primero instalamos el paquete de instalación chocolatey, que nos ayudará a instalar los editores: `Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
+      ![img_65.png](img_65.png)
+    * Ahora procedemos a instalar los editores:
+      * nano--> `choco install nano`
+        ![img_66.png](img_66.png)
+      * vim-->`choco install vim`
+        ![img_67.png](img_67.png)
+        <span style="color:red">NOTA: Puede que el editor nano o vim ya vengan por defecto.</span>
+  * Procedemos a editar un archivo de tres maneras distintas:\
+
+    1. Con el comando: `wsl nano|vim <nombre_archivo>`, tendremos que introducir la ruta absoluta del archivo como si lo estuviéramos introduciendo en una distribución de Linux del WSL.
+       ![img_74.png](img_74.png)
+    2. Con el comando: `bash -c "nano|vim <nombre_archivo>"`
+       ![img_76.png](img_76.png)
+    3. O simplemente con el comando `nano|vim <nombre_archivo>`, pero para ello primero tendremos que seguir los siguientes pasos:
+
+    * Primero abrimos el fichero de configuración `$profile` de PowerShell, por ejemplo con el notepad.
+      ![img_78.png](img_78.png)
+    * Luego añadimos las siguientes líneas:
+
+    ```bash
+    function vi ($File){
+       bash -c "vi $File"
+    }
+
+    function nano ($File){
+       bash -c "nano $File"
+    }
+    ```
+
+    ![img_75.png](img_75.png)
+  * Ya dentro del archivo procedemos a escribir lo que quisiéramos:
+
+    <span style="color:red">NOTA: Para entrar en modo edición en vim pulsa la tecla `i`, para entrar en modo lectura pulsa la tecla `ESC`.</span>
+  * Para guardar y salir de la edición:
+
+    * nano:
+      * Guardar: ![Teclas](https://img.shields.io/badge/ctrl+O+Enter-grey).
+      * Salir: ![Teclas](https://img.shields.io/badge/ctrl+X+Enter-grey)
+    * vim:
+      * Primero entramos en modo lectura con la tecla `ESC`.
+        * Guardar: ![Teclas](https://img.shields.io/badge/:w-grey).
+        * Salir: ![Teclas](https://img.shields.io/badge/:q-grey)
+  * Ahora procedemos a leer el contenido con normalidad.
+    ![img_73.png](img_73.png)
+    Y ahora si quisiéramos leer el contenido del archivo, usamos el comando `get-content`.
+* ***get-content:***
+  * Nos permite ver el contenido de un archivo.
+  * Alias:
+    * cat
+      Ejemplo:
+      ![img_79.png](img_79.png)
+
 </p>
 
 <strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#13">2.7. Tuberías y redireccionamiento</a></strong><br>
 
 <p id="Tuberias">
+Imaginemos que necesitamos conocer todos los archivos que tengan más de 4GB y ordenados de mayor a menor.<br> 
+¿Y eso cómo lo vamos a hacer? Pues con <strong>tuberías</strong>.<br> 
+Y digamos que además necesitamos que se almacene en un archivo y eso cómo lo haríamos?, pues con <strong>Redireccionamiento.</strong>
 
+Vamos a empezar con las tuberías.
+* Tuberías:
+  * Las tuberías nos permiten conectar la salida de un Cmdlet con la entrada de otro, que la tratará como su información de inicio.
+  * Utilizaremos el carácter | (tubería o pipe) para enlazar los comandos.
+  * Vamos a ver ejemplos:
+
+Primero vamos a ver un comando que ya vimos llamado `get-command` pero ahora no queremos mostrarlos sino contar el total pero para ello usamos comando.
+`get-command|measure-object` 
+
+(El último comando recibe como entrada todos los comandos gracias a la tubería y devuelve el total).
+![img_80.png](img_80.png)
+
+>`get-childItem -Recurse | where-object {$_.Length -gt 100Mb}`
+>>El primer comando Get-ChildItem -Recurse: devuelve un objeto de archivo o directorio para cada elemento del directorio actual del sistema de archivos. Los objetos de archivo y directorio se pasan por la canalización al segundo comando.\
+>>El segundo comando usa where where-object {$_.Length -gt 100Mb} la propiedad Length de todos los objetos del sistema de archivos para seleccionar solo los archivos, que tienen un tamaño mayor de 100Mb.
+
+Vamos a ver si nos sale algo.
+![img_81.png](img_81.png)
+
+Y si también quisiéramos ordenarlos en orden descendente por la propiedad longitud haríamos lo siguiente:
+Fijaros que hemos empleado dos filtros, el primero recoge lo que devuelve el primer comando y el segundo lo que devuelve el segundo comando. 
+Fijaros la utilidad que tienen los filtros.
+![img_82.png](img_82.png)
+
+Vamos a otro ejemplo que yo creo que es importante. \
+__Imaginaros como administrador necesitáis averiguar aquellos puertos en los que se ha producido una conexión. El comando sería `get-netTCPConnection`__
+
+Pero debido a que no se ve bien la información lo ejecutaremos de la siguiente manera  `get-netTCPConnection|format-table -autosize`, porque lo que hace ahora es visualizar la información en formato tabla y que se ajuste mejor a la pantalla.
+![img_83.png](img_83.png)
+
+¿Qué pasa si quisieramos ver solo aquellas conexiones establecidas?
+
+Pues solo necesitamos hacer un filtro.
+
+![img_84.png](img_84.png)
+
+Vamos a ver ahora el tema de Redireccionamiento
+* ***Redireccionamiento:***
+  * Las redirecciones nos permiten mandar los resultados a un lugar diferente de la pantalla. Normalmente a un archivo.
+  * `>`: Crea un nuevo archivo y deposita en él la salida del cmdlet.
+  ![img_85.png](img_85.png)
+  * `>>`: Añade al contenido del archivo la salida del cmdlet.
+  Solo he añadido la fecha ![img_87.png](img_87.png)
+
+Las salidas de los comandos anteriores también podríamos añadirlos al mismo archivo con el signo `>` pero si quisiéramos sobreescribir entonces sería con `>>`, por ejemplo, el comando que nos mostraba las conexiones o puertos abiertos.
+![img_88.png](img_88.png)
+
+En este último comando como podemos fijarnos hemos utilizado un comando, tuberías y redireccionamiento.
 </p>
+
 
 <strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#14">2.8. Iniciación a los scripts</a></strong><br>
 
@@ -589,8 +754,7 @@ B["fa:fa-twitter PC"]
     B-->E(fa:fa-camera-retro PowerShell)
     E-->F(fa:fa-camera-retro Fichero) 
     C-->F(fa:fa-camera-retro Fichero)
-    F-->H(fa:fa-camera-retro Fichero)
-    H-->|Control|I(fa:fa-spinner Git)
+    F-->|Control|I(fa:fa-camera-retro Git)
     I-->|Repositorio|J(fa:fa-spinner Github)
 ```
 
@@ -599,7 +763,3 @@ flowchart LR
 A[PowerShell]-->|Control| B{Git}
 B -->C[Github]
 ```
-
-# Los lenguajes utilizados
-
-[![Jloen lenguajes](https://github-readme-stats.vercel.app/api/top-langs/?username=jloen1999&theme=blue-green)](https://github.com/Jloen1999/PrimeraECTSFC)
