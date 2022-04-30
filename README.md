@@ -2,7 +2,7 @@
 
 <h2>PowerShell y el uso de Git en Github</h2><br>
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jloen1999&repo=github-readme-stats)](https://github.com/Jloen1999/PrimeraECTSFC/edit/main/README.md)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jloen1999&repo=github-readme-stats)](https://github.com/Jloen1999/PrimeraECTSFC)
 
 [![PowerShell](https://img.shields.io/badge/powershell-%235391FE.svg?&style=for-the-badge&logo=powershell&logoColor=white)](#PowerShell)
 [![GitHub](https://img.shields.io/badge/github-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white)](#Github)
