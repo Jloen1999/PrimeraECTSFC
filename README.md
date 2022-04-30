@@ -2,6 +2,8 @@
 
 <h2>PowerShell y el uso de Git en Github</h2><br>
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jloen1999&exclude_repo=github-readme-stats,anuraghazra.github.io)](https://github.com/anuraghazra/github-readme-stats)
+
 [![PowerShell](https://img.shields.io/badge/powershell-%235391FE.svg?&style=for-the-badge&logo=powershell&logoColor=white)](#PowerShell)
 [![GitHub](https://img.shields.io/badge/github-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white)](#Github)
 [![git](https://img.shields.io/badge/git-%23F05032.svg?&style=for-the-badge&logo=git&logoColor=white)](#Github)
