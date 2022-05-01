@@ -1,6 +1,6 @@
 # PRIMERA ECTS DE FC 💻
 
-<h2>PowerShell y el uso de Git en Github</h2><br>
+<h2>PowerShell y el uso de Git en Github.</h2><br>
 
 [![PowerShell](https://img.shields.io/badge/powershell-%235391FE.svg?&style=for-the-badge&logo=powershell&logoColor=white)](#PowerShell)
 [![GitHub](https://img.shields.io/badge/github-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white)](#Github)
