@@ -1,22 +1,18 @@
+<span style="font-family:Arial;font-style: normal; font-size:12px">
+
 # PRIMERA ECTS DE FC 💻
 
-<h2>PowerShell y el uso de Git en Github</h2><br>
+<h2>PowerShell y el uso de Git en Github</h2>
 
-[![PowerShell](https://img.shields.io/badge/powershell-%235391FE.svg?&style=for-the-badge&logo=powershell&logoColor=white)](#PowerShell)
-[![GitHub](https://img.shields.io/badge/github-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white)](#Github)
-[![git](https://img.shields.io/badge/git-%23F05032.svg?&style=for-the-badge&logo=git&logoColor=white)](#Github)
+[![PowerShell](https://img.shields.io/badge/powershell-%235391FE.svg?&style=for-the-badge&logo=powershell&logoColor=white)](https://docs.microsoft.com/es-es/powershell/scripting/overview?view=powershell-7.2)
+[![GitHub](https://img.shields.io/badge/github-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jloen1999/PrimeraECTSFC)
 
 ![Nombre:](https://img.shields.io/badge/Nombre:-Jose%20Luis%20Obiang%20Ela%20Nanguan-orange) <br>
 ![Profesor](https://img.shields.io/badge/Profesor:-Francisco%20Fernandez%20de%20Vega-orange) <br>
-![Fecha](https://img.shields.io/badge/Fecha-27%2F04%2F2022-orange)
-
-***Copyright :copyright: José Luis Obiang Ela Nanguan***
-
-***Documentación del proyecto:*** :point_right:[JLOEN1999](https://github.com/Jloen1999/PrimeraECTSFC)
-
-***Documentación oficial de PowerShell:*** :point_right:[PowerShell](https://docs.microsoft.com/es-es/powershell/scripting/overview?view=powershell-7.2)
-
+![Fecha](https://img.shields.io/badge/Fecha-03%2F05%2F2022-orange)
 ![Version](https://img.shields.io/badge/Version%20Actual-27.04.2022-blue)
+
+***Copyright :copyright: :point_right:José Luis Obiang Ela Nanguan***
 
 <h1><b>Índice de contenido</b></h1>
 <ol>
@@ -43,24 +39,36 @@
 </ol>
 </li>
 
-</ol>
+```mermaid
+flowchart LR;
+A[Introduccion]-->B(linea de comandos)
+B --> C{Que es PowerShell?}
+C -->D[la consola de PowerShell]
+D -->E[La ayuda en PowerShell]
+E -->F[Gestion de archivos y carpetas]
+F -->G[Tuberias y redireccionamiento]
+G -->H[Iniciacion a los scripts]
+H -->I[Fundamentos de scripts-I: Comentarios, Variables/Constantes]
+I -->J[Fundamentos de scripts-II: Estructuras de control y funciones]
+```
 
-<strong><a style="color:magenta; font-size:25px; margin:0px" href="#1">1. Presentación</a></strong><br>
+</ol>
+<strong><a style="color:magenta; font-size:25px; margin:0" href="#1">1. Presentación</a></strong><br>
 
 <p id="Presentación">
 Este curso está planteado en lo más práctico posible. Las Prácticas que vamos a realizar son las siguientes:
 
-___En primer lugar empezaremos a trabajar con la PowerShell y la PowerShell ISE___.
+> ___En primer lugar empezaremos a trabajar con la PowerShell y la PowerShell ISE___.
 
-___Vamos a buscar Información sobre el uso de algunos comandos___.
+> ___Vamos a buscar Información sobre el uso de algunos comandos___.
 
-___Vamos a utilizar los comandos básicos relacionados con la gestión de archivos y carpetas___.
+> ___Vamos a utilizar los comandos básicos relacionados con la gestión de archivos y carpetas___.
 
-___Vamos a enlazar la salida de un comando con la entrada de otro y redireccionar la salida___.
+> ___Vamos a enlazar la salida de un comando con la entrada de otro y redireccionar la salida___.
 
-___Y vamos a realizar pequeños scripts, vamos a hacer scripts en los que combinaremos esctructuras condicionales, repetitivas y redireccionamiento.___
+> ___Y vamos a realizar pequeños scripts, vamos a hacer scripts en los que combinaremos esctructuras condicionales, repetitivas y redireccionamiento.___
 
-___También haremos uso de la herramienta Git y la subida de nuestros scripts a Github___
+> ___También haremos uso de la herramienta Git y la subida de nuestros scripts a Github___
 
 </p>
 <strong style="margin-left: 25px"><a style="color:green; font-size:25px" href="#2">1.1. Objetivos</a></strong><br>
@@ -86,19 +94,6 @@ Pues vamos a:
 <strong><a style="color:magenta; font-size:25px; margin:0px" href="#3">2. PowerShell</a></strong><br>
 
 <p id="PowerShell">
-
-```mermaid
-flowchart LR;
-A[Introduccion]-->B(linea de comandos)
-B --> C{Que es PowerShell?}
-C -->D[la consola de PowerShell]
-D -->E[La ayuda en PowerShell]
-E -->F[Gestion de archivos y carpetas]
-F -->G[Tuberias y redireccionamiento]
-G -->H[Iniciacion a los scripts]
-H -->I[Fundamentos de scripts-I: Comentarios, Variables/Constantes]
-I -->J[Fundamentos de scripts-II: Estructuras de control y funciones]
-```
 
 <strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#3">2.1. Introducción</a></strong><br>
 
@@ -216,10 +211,13 @@ No tenemos que confundir:
 * Windows PowerShell es la consola de comandos.
 
 ***¿Qué requisitos se necesitan para aprender dicha herramienta?***
->Como se trata de un curso en el ámbito de iniciación en PowerShell, cualquier persona con conocimientos de informática a nivel de usuario podría hacerlo sin mayor problema, ahora bien hay una parte en la que se habla de variables y estructuras condicionales y entonces aquí si se requiere conocimientos mínimos de programación.
+
+> Como se trata de un curso en el ámbito de iniciación en PowerShell, cualquier persona con conocimientos de informática a nivel de usuario podría hacerlo sin mayor problema, ahora bien hay una parte en la que se habla de variables y estructuras condicionales y entonces aquí si se requiere conocimientos mínimos de programación.
 
 ***¿Qué máquina necesitamos para trabajar en PowerShell?***
->Es suficiente con tener un Windows 10 instalado o bien un Windows Server.
+
+> Es suficiente con tener un Windows 10 instalado o bien un Windows Server.
+
 <p id="Consola"><strong style="color:green;font-size: 25px; margin-left: 18px" ></strong>
 <strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#7">2.4. La consola de PowerShell</a></strong><br>
 
@@ -235,10 +233,14 @@ Podemos ver la versión que tiene nuestro PowerShell con el comando `get-host`.
 ![img_2.png](imagenes/img_2.png)
 
 **Concepto de cmdlet**:
->Los comandos en PowerShell se llaman cmdlet. Es una combinación de verbo y nombre separados por un guión`(-)`.
->>Verbo(Verb): describe la acción que se va a realizar.
-> 
->>Nombre(Noun) es el objeto sobre el que se va a realizar la acción.
+
+> Los comandos en PowerShell se llaman cmdlet. Es una combinación de verbo y nombre separados por un guión`(-)`.
+>
+>> Verbo(Verb): describe la acción que se va a realizar.
+>>
+>
+>> Nombre(Noun) es el objeto sobre el que se va a realizar la acción.
+>>
 
 <span style="color:red">NOTA: PowerShell incorpora incluso muchos de los comandos de Linux.</span>
 
@@ -338,8 +340,9 @@ Y si quisiera buscar absolutamente todos los comandos que incluyan la palabra lo
 
 Ahora vamos a ver el concepto de módulo.
 
-***Concepto de Módulo:*** 
->Un módulo no es nada más que un conjunto de comandos
+***Concepto de Módulo:***
+
+> Un módulo no es nada más que un conjunto de comandos
 
 Para ver los módulos que hay en el sistema ejecutamos el siguiente comando
 `get-module`
@@ -392,7 +395,7 @@ Existen tipos de ayuda en PowerShell:
 - Ayuda Completa: `get-help <nombre_comando> -full`
 - Ayuda Online: `get-help <nombre_comando> -online`
 
-Vamos a verlo sobre la marcha, por ejemplo necesitamos crear la cuenta de un usuario, pero no sabemos nada sobre la sintaxis de ese comando.\
+Vamos a verlo sobre la marcha, por ejemplo necesitamos crear la cuenta de un usuario, pero no sabemos nada sobre la sintaxis de ese comando.
 Pues usamos lo siguiente. `get-help new-localuser`
 
 ![img_33.png](imagenes/img_33.png)
@@ -410,13 +413,16 @@ Digamos que aun no me he enterado bien sobre el uso del comando, voy a hacer que
 <p id="atajoAlias">
 
 * ***Atajos:***
-  >La mayoría de los administradores quieren escribir los comandos lo más rápido posible, para ello usan los tabuladores.
-  ¿Qué hace el tabulador? Nos completa el comando que estamos escribiendo, si hay más de una opción podemos verla con los cursores.
+  > La mayoría de los administradores quieren escribir los comandos lo más rápido posible, para ello usan los tabuladores.
+  > ¿Qué hace el tabulador? Nos completa el comando que estamos escribiendo, si hay más de una opción podemos verla con los cursores.
+  >
 * ***Cursor:***
-  >Nos permite seleccionar un comando ejecutado anteriormente.
+  > Nos permite seleccionar un comando ejecutado anteriormente.
+  >
 * ***Historial:***
-  >Otra función más interesante es el historial, entonces si yo digo dame el historial de todos los comandos que he ejecutado,
-  usamos el comando `get-history`
+  > Otra función más interesante es el historial, entonces si yo digo dame el historial de todos los comandos que he ejecutado,
+  > usamos el comando `get-history`
+  >
 
 ![img_35.png](imagenes/img_35.png)
 
@@ -457,7 +463,8 @@ Si quisiéramos eliminar todo el historial de comandos usamos el comando `clear-
 Tanto los historiales, los tabuladores y los cursores nos pueden ayudar a escribir los comandos de una forma más rápida.
 
 * ***Alias:***
-  >El alias no es nada más que un apodo o un sobrenombre para referirse a un Cmdlet
+  > El alias no es nada más que un apodo o un sobrenombre para referirse a un Cmdlet
+  >
 
 Vamos a ver los alias que tiene el sistema con el comando `get-alias`
 
@@ -531,9 +538,10 @@ Vamos a crear un archivo y un directorio
 
 ![img_51.png](imagenes/img_51.png)
 
-¿Qué pasaría si el directorio que queremos eliminar tiene archivos dentro? 
->Solo con el comando el sistema nos preguntaría si queremos borrar la carpeta
-Para que no nos pregunte usamos el parámetro `Recurse`
+¿Qué pasaría si el directorio que queremos eliminar tiene archivos dentro?
+
+> Solo con el comando el sistema nos preguntaría si queremos borrar la carpeta
+> Para que no nos pregunte usamos el parámetro `Recurse`
 
 Hacemos una prueba, creamos archivos dentro de un directorio que crearemos ahoraPasos:
 
@@ -671,30 +679,33 @@ Pues con <strong>tuberías</strong>.<br>
 Y digamos que además necesitamos que se almacene en un archivo y eso cómo lo haríamos?, pues con <strong>Redireccionamiento.</strong>
 
 Vamos a empezar con las tuberías.
+
 * Tuberías:
   * Las tuberías nos permiten conectar la salida de un Cmdlet con la entrada de otro, que la tratará como su información de inicio.
   * Utilizaremos el carácter | (tubería o pipe) para enlazar los comandos.
   * Vamos a ver ejemplos:
 
 Primero vamos a ver un comando que ya vimos llamado `get-command` pero ahora no queremos mostrarlos sino contar el total pero para ello usamos comando.
-`get-command|measure-object` 
+`get-command|measure-object`
 
 (El último comando recibe como entrada todos los comandos gracias a la tubería y devuelve el total).
 ![img_80.png](imagenes/img_80.png)
 
->`get-childItem -Recurse | where-object {$_.Length -gt 100Mb}`
->>El primer comando Get-ChildItem -Recurse: devuelve un objeto de archivo o directorio para cada elemento del directorio actual del sistema de archivos. Los objetos de archivo y directorio se pasan por la canalización al segundo comando.\
->>El segundo comando usa where where-object {$_.Length -gt 100Mb} la propiedad Length de todos los objetos del sistema de archivos para seleccionar solo los archivos, que tienen un tamaño mayor de 100Mb.
+> `get-childItem -Recurse | where-object {$_.Length -gt 100Mb}`
+>
+>> El primer comando Get-ChildItem -Recurse: devuelve un objeto de archivo o directorio para cada elemento del directorio actual del sistema de archivos. Los objetos de archivo y directorio se pasan por la canalización al segundo comando.
+>> El segundo comando usa where where-object {$_.Length -gt 100Mb} la propiedad Length de todos los objetos del sistema de archivos para seleccionar solo los archivos, que tienen un tamaño mayor de 100Mb.
+>>
 
 Vamos a ver si nos sale algo.
 ![img_81.png](imagenes/img_81.png)
 
 Y si también quisiéramos ordenarlos en orden descendente por la propiedad longitud haríamos lo siguiente:
-Fijaros que hemos empleado dos filtros, el primero recoge lo que devuelve el primer comando y el segundo lo que devuelve el segundo comando. 
+Fijaros que hemos empleado dos filtros, el primero recoge lo que devuelve el primer comando y el segundo lo que devuelve el segundo comando.
 Fijaros la utilidad que tienen los filtros.
 ![img_82.png](imagenes/img_82.png)
 
-Vamos a otro ejemplo que yo creo que es importante. \
+Vamos a otro ejemplo que yo creo que es importante.
 __Imaginaros como administrador necesitáis averiguar aquellos puertos en los que se ha producido una conexión. El comando sería `get-netTCPConnection`__
 
 Pero debido a que no se ve bien la información lo ejecutaremos de la siguiente manera  `get-netTCPConnection|format-table -autosize`, porque lo que hace ahora es visualizar la información en formato tabla y que se ajuste mejor a la pantalla.
@@ -707,19 +718,20 @@ Pues solo necesitamos hacer un filtro.
 ![img_84.png](imagenes/img_84.png)
 
 Vamos a ver ahora el tema de Redireccionamiento
+
 * ***Redireccionamiento:***
   * Las redirecciones nos permiten mandar los resultados a un lugar diferente de la pantalla. Normalmente a un archivo.
   * `>`: Crea un nuevo archivo y deposita en él la salida del cmdlet.
-  ![img_85.png](imagenes/img_85.png)
+    ![img_85.png](imagenes/img_85.png)
   * `>>`: Añade al contenido del archivo la salida del cmdlet.
-  Solo he añadido la fecha ![img_87.png](imagenes/img_87.png)
+    Solo he añadido la fecha ![img_87.png](imagenes/img_87.png)
 
 Las salidas de los comandos anteriores también podríamos añadirlos al mismo archivo con el signo `>` pero si quisiéramos sobreescribir entonces sería con `>>`, por ejemplo, el comando que nos mostraba las conexiones o puertos abiertos.
 ![img_88.png](imagenes/img_88.png)
 
 En este último comando como podemos fijarnos hemos utilizado un comando, tuberías y redireccionamiento.
-</p>
 
+</p>
 
 <strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#14">2.8. Iniciación a los scripts</a></strong><br>
 
@@ -727,12 +739,16 @@ En este último comando como podemos fijarnos hemos utilizado un comando, tuber�
 
 ***¿Qué es un script?***
 
->Bueno, los administradores de sistemas utilizan principalmente los scripts para automatizar tareas, pero qué es un script?
-> >pues un script es un archivo de texto plano que contiene una secuencia de órdenes o comandos.
-Para que un archivo sea tratado como un script tiene que tener una extensión de ps1.
+> Bueno, los administradores de sistemas utilizan principalmente los scripts para automatizar tareas, pero qué es un script?
+>
+>> pues un script es un archivo de texto plano que contiene una secuencia de órdenes o comandos.
+>> Para que un archivo sea tratado como un script tiene que tener una extensión de ps1.
+>>
 
 ***¿Para qué se usa un script?***
->Podríamos usar un script para automatizar tareas, por ejemplo para:
+
+> Podríamos usar un script para automatizar tareas, por ejemplo para:
+
 * Comprobar si un determinado servicio está activo y si se ha detenido lo quiere activar.
 * Realizar una copia de seguridad en un viernes a las 3PM.
 * Copia de seguridad del sistema por ejemplo a las 6AM.
@@ -744,12 +760,13 @@ Ahora vamos a ver el punto de seguridad en los scripts.
 
 ***Seguridad en los scripts:***
 PowerShell incorpora medidas de seguridad para evitar que se ejecuten sin la autorización del usuario scripts que puedan dañar al equipo y ha establecido 4 niveles de seguridad.
+
 * Niveles de seguridad:
   * Restricted. Es el nivel predeterminado que no permite la ejecución de scripts.
   * AllSigned. Todos los scripts deberán estar autenticados para poder ejecutarlos, es la opción más segura.
   * RemoteSigned. Solo deberán ser autenticados los scripts que proceden de una ubicación remota, es decir, solo funcionarían nuestros scripts y aquellos que se bajen de la red pero que estén autenticados.
   * Unrestricted. Permite la ejecución de cualquier script y por eso es la opción menos segura.
- 
+
 Vamos a abrir nuestro PowerShell como administrador.
 Ahora procedemos a comprobar la política de seguridad que tenemos establecida con el comando `get-executionPolicy`
 
@@ -780,40 +797,40 @@ Este entorno tiene dos partes, una parte en la que escribimos el script y otra p
 * PowerShell dispone de un entorno gráfico llamado PowerShell ISE(Integrated Scripting Environment)
 * Su gran ventaja es que integra las tareas relativas a la escritura, deppuración y ejecución de scripts.
 
-Vamos a crear un nuevo script el cual llamaremos ejemplo2.\
+Vamos a crear un nuevo script el cual llamaremos ejemplo2.
 Podemos ejecutar todo el script.
 ![img_95.png](imagenes/img_95.png)
 O bien solo las líneas que seleccionemos desde la opción ejecutar selección![img_96.png](imagenes/img_96.png)
 
-Si quisiéramos añadir un punto de ruptura en alguna línea de nuestro script, digamos en la línea 2. \
+Si quisiéramos añadir un punto de ruptura en alguna línea de nuestro script, digamos en la línea 2.
 Primero le damos al botón derecho y seleccionamos la opción alternar puntos de interrupción, entonces cuando le das ejecutar se va a parar la ejecución en dicha línea
 ![img_97.png](imagenes/img_97.png)
 y después si quiero ver lo que va pasando poco a poco pulsaría `F11` y continuaría la ejecución en línea a línea a línea cada vez que le doy al `F11`
 ![img_98.png](imagenes/img_98.png)
 ![img_99.png](imagenes/img_99.png)
 
-
 </p>
 
 <strong style="margin-left: 25px"><a style="color:green; font-size:20px" href="#15">2.9. Fundamentos de scripts-I: Comentarios, Variables/Constantes</a></strong><br>
 
-      * Cualquier script debe tener líneas de comentarios, que explique algún detalle en concreto o algún procedimiento.
-      * Es fundamental saber correctamente las variables.
-
+* Cualquier script debe tener líneas de comentarios, que explique algún detalle en concreto o algún procedimiento.
+* Es fundamental saber correctamente las variables.
 * ***Comentarios:***
+
   * Hay dos formas de comentarios:
+
     * En línea. Empiezan solo con una `almohadilla`(#).
     * En bloque:
       * <#
       * Todo lo que vaya
-      * Entre etiquetas 
+      * Entre etiquetas
       * También se comentarios
       * #>
-  
-    Creamos un archivo el cual llamaremos comentarios, incluimos comentario en línea, comentario en bloque y algún comando.  
-  ![img_100.png](imagenes/img_100.png) Si los comentarios están bien hechos no debería mostrar el texto comentado.
 
+    Creamos un archivo el cual llamaremos comentarios, incluimos comentario en línea, comentario en bloque y algún comando.
+    ![img_100.png](imagenes/img_100.png) Si los comentarios están bien hechos no debería mostrar el texto comentado.
 * ***Variables:***
+
   * Es un espacio en memoria, que contiene un valor que puede cambiar.
   * No es obligatorio declararla, ni inicializarla.
   * Es suficiente con utilizar el signo `=` para asignarle un valor. PowerShell se encargará de crearla y determinar el tipo.
@@ -826,6 +843,7 @@ Si quisiéramos saber qué tipo de dato es una variable, usamos, el comando `$no
 ![img_102.png](imagenes/img_102.png)
 También podríamos declarar variables con el cmdlet `new-variable -name nombre_variable [-value valor]`
 ![img_103.png](imagenes/img_103.png)
+
 * ***Constantes:***
   * Las constantes son variables cuyos valores no pueden cambiarse
   * Se crean con el comando `new-variable -name nombre_variable [-value valor] -option constant`![img_104.png](imagenes/img_104.png)
@@ -835,13 +853,14 @@ Si intentamos cambiar el valor de una constante nos saldrá el siguiente mensaje
 
 ***Tipos de datos con los que trabaja PowerShell***
 
-|Tipos de datos|Descripción|
-|--------------|--------------|
-|int|Entero con signo|
-|Double|Números decimales|
-|Char|Un solo carácter|
-|String|Una cadena de texto|
-|Boolean|Valor lógico(True o False|
+
+| Tipos de datos | Descripción               |
+| ---------------- | ---------------------------- |
+| int            | Entero con signo           |
+| Double         | Números decimales         |
+| Char           | Un solo carácter          |
+| String         | Una cadena de texto        |
+| Boolean        | Valor lógico(True o False |
 
 <p id="F1">
 
@@ -858,7 +877,7 @@ Como cualquier otro lenguaje, PowerShell también tiene estructuras de control, 
 * Por ejemplo dependiendo de una condición se puede ejecutar un grupo u otro de sentencias.
 * Dependiendo de la condición se puede ejecutar un grupo determinado de sentencias un número determinado de veces.
 
->PowerShell incorpora una funcionalidad muy útil denominada snippets, que son estructuras de código listas par ser usadas. Vamos a verlo ahora cuando hablemos de las estructuras condicionales.
+> PowerShell incorpora una funcionalidad muy útil denominada snippets, que son estructuras de código listas par ser usadas. Vamos a verlo ahora cuando hablemos de las estructuras condicionales.
 
 * ***Estructuras condicionales:***
   * Las estructuras condicionales ejecutan un grupo de sentencias en función del valor de una condición.
@@ -870,19 +889,20 @@ Con las teclas ![Teclas](https://img.shields.io/badge/ctrl+J-grey) podemos elegi
 **Vamos a hacer un script que comprueba la conectividad con el servidor pero para ello primero tenemos que abrir la ISE de PowerShell como administrador.**
 
 Pasos:
-  * Limpiamos la pantalla: `Clear-Host`.
-  * Mostramos el mensaje Conectividad: `Write-Host "Conectividad"`.
-  * Pedimos al usuario que introduzca una dirección IP, la cual la almacenamos en una variable: `$IP=Read-Host "Introduce una IP "`
-  * Comprobamos la conectividad, el comando nos devuelve un valor booleano, por lo tanto, lo almacenaremos en una variable: `$conexion=Test-Connection $IP -count 1 -Quiet`
-    * -count: Indica la cantidad de Ping
-    * -Quiet: Muestra si hay conexión o no hay.
-  * Evaluamos una condición según si hay conexión o no con la estructura condicional if-else.
-    * if: si se cumple nos mostrará el mensaje "$ip conexión establecida".
-  ![img_109.png](imagenes/img_109.png) 
-    * else: "$ip Error de conexión".
-    Esta IP no está en nuestra red ![img_110.png](imagenes/img_110.png) 
 
-***¿Para qué puede servir este script?*** Imaginaros que tenemos un fichero con todos los servidores que nos interesa, podemos hacer una conexión con cada uno de esos servidores y elaborar un informe que nos diga qué servidor está disponible y cuál no? 
+* Limpiamos la pantalla: `Clear-Host`.
+* Mostramos el mensaje Conectividad: `Write-Host "Conectividad"`.
+* Pedimos al usuario que introduzca una dirección IP, la cual la almacenamos en una variable: `$IP=Read-Host "Introduce una IP "`
+* Comprobamos la conectividad, el comando nos devuelve un valor booleano, por lo tanto, lo almacenaremos en una variable: `$conexion=Test-Connection $IP -count 1 -Quiet`
+  * -count: Indica la cantidad de Ping
+  * -Quiet: Muestra si hay conexión o no hay.
+* Evaluamos una condición según si hay conexión o no con la estructura condicional if-else.
+  * if: si se cumple nos mostrará el mensaje "$ip conexión establecida".
+    ![img_109.png](imagenes/img_109.png)
+  * else: "$ip Error de conexión".
+    Esta IP no está en nuestra red ![img_110.png](imagenes/img_110.png)
+
+***¿Para qué puede servir este script?*** Imaginaros que tenemos un fichero con todos los servidores que nos interesa, podemos hacer una conexión con cada uno de esos servidores y elaborar un informe que nos diga qué servidor está disponible y cuál no?
 
 * ***Estructuras repetitivas:***
   * Nos permiten repetir un bloque de instrucciones.
@@ -910,9 +930,12 @@ Esta función lo que hará es el `foreach`.
 ![img_114.png](imagenes/img_114.png)
 
 Buen pues si hacemos un resumen de lo que se ha visto en el curso. Hemos visto lo más importante
+
 * Obtener ayuda.
 * La diferencia entre los cmdlet y los módulos que nos ayudan a obtener información del sistema.
 * También hemos visto estructuras de control y repetitivas.
 * Iniciación a los scripts, filtros y redireccionamientos.
-* Y hemos visto que cualquier administrador de sistemas operativos Windows tiene que usar la PowerShell sí o sí. 
+* Y hemos visto que cualquier administrador de sistemas operativos Windows tiene que usar la PowerShell sí o sí.
+
 </p>
+</span>
