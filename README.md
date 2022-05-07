@@ -2,7 +2,7 @@
 
 # PRIMERA ECTS DE FC 💻
     
-![logotipoPowerShell](imagenes/logotipo.jpg){: height="50px" width="50px" }
+![logotipoPowerShell](imagenes/logotipo.jpg){ width=50% }
     
     
     
