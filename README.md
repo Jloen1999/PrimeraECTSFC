@@ -2,7 +2,7 @@
 
 # PRIMERA ECTS DE FC 💻
     
-<img src="imagenes/logotipo.jpg" alt="logotipoPowerShell" width="100%" height="30%"/>
+<img src="imagenes/logotipo.jpg" alt="logotipoPowerShell" width="100%" height="10%"/>
     
 <h2>PowerShell y el uso de Git en Github</h2>
 
