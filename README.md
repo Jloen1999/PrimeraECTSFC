@@ -1,11 +1,8 @@
 <span style="font-family:Arial;font-style: normal; font-size:12px">
 
 # PRIMERA ECTS DE FC 💻
-![logotipoPowerShell](imagnees\logotipo.jpg)
-    
-    
-    
-    
+![logotipoPowerShell](imagees\logotipo.jpg)
+
 <h2>PowerShell y el uso de Git en Github</h2>
 
 [![PowerShell](https://img.shields.io/badge/powershell-%235391FE.svg?&style=for-the-badge&logo=powershell&logoColor=white)](https://docs.microsoft.com/es-es/powershell/scripting/overview?view=powershell-7.2)
