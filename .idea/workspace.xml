@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6afe4885-4e15-4d12-a8b4-fb935e86ecfa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markDown.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/herramientasMarkdown.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,17 +31,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PrimeraECTSTC" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JLOel/OneDrive/Escritorio/WebSite&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JLOel\OneDrive\Escritorio\markDown\GradoSuperior" />
+      <recent name="C:\Users\JLOel\OneDrive\Escritorio\markDown\GradoSuperior\Asignaturas" />
+      <recent name="C:\Users\JLOel\OneDrive\Escritorio\markDown\UEX\Matricula" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JLOel\OneDrive\Escritorio\markDown\renovacionNIE\documentacion" />
       <recent name="C:\Users\JLOel\OneDrive\Escritorio\markDown" />
     </key>
   </component>
@@ -74,10 +77,37 @@
       <workItem from="1651020551789" duration="3553000" />
       <workItem from="1651024179199" duration="3181000" />
       <workItem from="1651027420394" duration="9115000" />
+      <workItem from="1651100558873" duration="623000" />
+      <workItem from="1651104165507" duration="380000" />
+      <workItem from="1651497402626" duration="254000" />
+      <workItem from="1651735232628" duration="57000" />
+      <workItem from="1651925387657" duration="13000" />
+      <workItem from="1652043384333" duration="18000" />
+      <workItem from="1656625533806" duration="1576000" />
+      <workItem from="1656670717194" duration="25000" />
+      <workItem from="1658857085314" duration="11905000" />
+      <workItem from="1658876590156" duration="23000" />
+      <workItem from="1659221786190" duration="480000" />
+      <workItem from="1659222289690" duration="1990000" />
+      <workItem from="1659224300986" duration="364000" />
+      <workItem from="1661610123922" duration="592000" />
+      <workItem from="1661647149863" duration="240000" />
+      <workItem from="1662966716816" duration="281000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
